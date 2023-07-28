@@ -8,6 +8,7 @@
 }
 
 body {
+    height: 100%;
     margin: 0;
     font-size: 1rem;
     font-weight: 400;
@@ -60,38 +61,18 @@ p {
     transition: transform 0.5s ease; 
 }
 
-.caixa-content-iode .content {
-    padding: 0 1.5rem;
-    position: relative;
-    background: #000d16;
-}
+.h2-card {
+    width: 100%; 
+    color: white; 
+    font-size: 14px; 
+    letter-spacing: 2.80px; 
+    word-wrap: break-word; 
+    text-align: center;
+}¨
 
-.caixa-indice-content {
-
-    background: #00475d;
+.sec-iode {
     padding: 1.5rem 1.5rem;
     z-index: 1;
-}
-
-.box-indice {
-    padding: 0 1.5rem;
-    position: relative;
-}
-
-.caixa-indice-content .box-indice {
-    background: #00475d;
-    padding: 1.5rem 1.5rem;
-    z-index: 1;
-}
-
-.caixa-indice-content .h2 {
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-.card-indice h3 {
-    font-size: 1.25rem;
-    font-weight: 700;
 }
 
 

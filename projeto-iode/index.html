@@ -1,427 +1,165 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="Seja para entender o impacto de uma nova estratégia de vendas, medir a rentabilidade de projetos específicos ou identificar áreas de risco, o Índice Omie de Desempenho Econômico das PMEs é uma ferramenta essencial para empresas que buscam o crescimento contínuo e o sucesso no cenário competitivo atual.">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <title>Índice Omie de Desempenho Econômico das PMEs</title>
-    
-</head>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="robots" content="index, follow">
+      <meta name="description" content="Seja para entender o impacto de uma nova estratégia de vendas, medir a rentabilidade de projetos específicos ou identificar áreas de risco, o Índice Omie de Desempenho Econômico das PMEs é uma ferramenta essencial para empresas que buscam o crescimento contínuo e o sucesso no cenário competitivo atual.">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      <link rel="stylesheet" href="styles.css">
+      <title>Índice Omie de Desempenho Econômico das PMEs</title>
+  </head>
 
-<body>
-
-    <div>
-      <div class="text-center">
-        <div class="py-2" style="background-color: #00e2f4;">
-          <div class="alert header-live" role="alert">
-            <img src="/img/ico-live.svg" alt="Live IODE" class="img-fluid me-2">
-            <strong class="pe-2">LIVE – Fala, Economia!</strong> <br>O que o cenário econômico tem a dizer para o empreendedor.</br> 
-            <a href="https://www.youtube.com/watch?v=srrlLrEfwuE" class="alert-link text-uppercase" style="color: #001E27;">
-            <strong class="d-lg-flex align-items-center justify-content-center my-2">clique e se inscreva <img src="/img/seta-live-iode-v2.png" alt="Assistir Live do IODE>" class="img-fluid m-sm-2"></strong></a>
+  <body>
+      <div>
+        <div class="text-center">
+          <div class="py-2" style="background-color: #00e2f4;">
+            <div class="alert header-live" role="alert">
+              <img src="/img/ico-live.svg" alt="Live IODE" class="img-fluid me-2">
+              <strong class="pe-2">LIVE – Fala, Economia!</strong> <br>O que o cenário econômico tem a dizer para o empreendedor.</br> 
+              <a href="https://www.youtube.com/watch?v=srrlLrEfwuE" class="alert-link text-uppercase" style="color: #001E27;">
+              <strong class="d-lg-flex align-items-center justify-content-center my-2">clique e se inscreva <img src="/img/seta-live-iode-v2.png" alt="Assistir Live do IODE>" class="img-fluid m-sm-2"></strong></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-      
-    <nav style="background-color: #001E27;" class="navbar-mobile d-flex justify-content-center py-3">
-          <div class="container my-3">
-              <div class="row align-items-center">
-                    <div class="col-4">
-                      <a href="https://www.omie.com.br">
-                         <img src="/img/seta-direita-tst.svg" alt="Voltar para Omie" class="img-fluid edit-seta;" onmouseover="this.classList.add('seta-hover-effect')" onmouseout="this.classList.remove('seta-hover-effect')"> 
-                      </a>
-                    </div>
-      
-                    <div class="col-4 text-center">
-                      <a class="navbar-brand" href="https://www.omie.com.br">
-                          <img src="/img/omie-logo.png" alt="Sistema ERP - Omie" class="img-fluid m-sm-2">
-                      </a>
-                    </div>
-              </div>
-          </div>
-    </nav>
-      
-    <header class="banner p-0 bg-petroleo" style="background-color: rgb(0, 30, 39);">
-        <div class="container">
-          <div class="row">        
-            <div class="col-12 d-lg-none">
-              <img src="/img/banner-mob.png" alt="Imagem representativa" class="img-fluid w-100">
-            </div>
-            <div class="col-12">
-              <div class="caixa-content-iode">
-                <div class="content">
-                  <img src="/img/logo-iode.png" alt="Indice Omie de Desempenho Econômico das PMEs" class="img-fluid mt-lg-0">
-                  <h2 class="my-4 text-white pe-4">Índice Omie de Desempenho Econômico das PMEs</h2>
-                  <p><strong class="text-white">O empreendedorismo brasileiro sob uma nova perspectiva.</strong></p>
-                  <p class="text-white">A Omie desenvolveu o IODE-PMEs com o objetivo de ajudar os empreendedores a entender o comportamento do mercado de pequenas e médias empresas no Brasil e, assim, <strong class="text-white">tomar decisões baseadas em dados para os seus negócios.</strong></p>
-                  <a href="login.html">
-                    <img src="/img/cta-acesse.svg" alt="Acessar IODE" class="img-fluid">
-                  </a>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-    </header>
-     
-    <main class="main-iode">
-      <section class="caixa-indice-content mt-3 pb-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="col-indices">
-                <div class="col-sub-indices sub-1">
-                  <!-- funcionalidade do índice -->
-                  <div class="box-indice b-indice pe-0 pe-lg-3 mb-lg-3"> 
-                    <h2 class="text-white mb-5 mb-lg-4 text-uppercase">Como funciona o índice</h2>
         
-                    <div class="owl-indice owl-carousel owl-theme">
-                      <div class="item">
-                        <div class="card-indice">
-                          <img src="/img/grafismo1.png" alt="Tópico 1 - ovimentações financeiras anônimas" class="img-fluid lozad">
-                          <h3 class="text-white mt-0 mb-3 mb-lg-2">Movimentações <br class="d-none d-lg-block d-xxl-none"> financeiras anônimas</h3>
-                          <p class="text-white mb-0">Analisamos os dados <br class="d-none d-xl-block"> das PMEs ativas no Sistema<br class="d-none d-xl-block"> Omie com faturamento<br class="d-none d-xl-block"> anual de até R$ 50 milhões,<br class="d-none d-xl-block"> de maneira 100% anônima,<br class="d-none d-xl-block"> todos agregados por setores<br class="d-none d-xl-block"> da economia. A privacidade<br class="d-none d-xl-block"> é garantida pela Lei Geral<br class="d-none d-xl-block"> de Proteção de Dados<br class="d-none d-xl-block"> Pessoais (LGPD).</p>
-                        </div>
+      <nav style="background-color: #001E27;" class="navbar-mobile d-flex justify-content-center py-3">
+            <div class="container my-3">
+                <div class="row align-items-center">
+                      <div class="col-4">
+                        <a href="https://www.omie.com.br">
+                          <img src="/img/seta-direita-tst.svg" alt="Voltar para Omie" class="img-fluid edit-seta;" onmouseover="this.classList.add('seta-hover-effect')" onmouseout="this.classList.remove('seta-hover-effect')"> 
+                        </a>
                       </div>
-                      <div class="item">
-                        <div class="card-indice">
-                          <img src="/img/grafismo2.png" alt="Setorização por CNAE" class="img-fluid lozad">
-                          <h3 class="text-white mt-0 mb-3 mb-lg-2 d-flex align-items-end">
-                            Setorização <br class=""> por CNAE 
-                            <img src="/img/ajuda.svg" alt="CNAE" class="img-fluid m-0 img-cnae lozad" data-bs-toggle="modal" data-bs-target="#modal-cnae">
-                          </h3>
-                          <p class="text-white mb-0">Analisamos as<br class="d-none d-xl-block"> atividades econômicas <br class="d-none d-xl-block">(setores de atuação)<br class="d-none d-xl-block"> de cada empresa e as<br class="d-none d-xl-block"> segmentamos por CNAE, <br class="d-none d-xl-block">permitindo a avaliação dos<br class="d-none d-xl-block"> principais setores de<br class="d-none d-xl-block"> atuação das PMEs<br class="d-none d-xl-block"> brasileiras.</p>
-                        </div>
+        
+                      <div class="col-4 text-center">
+                        <a class="navbar-brand" href="https://www.omie.com.br">
+                            <img src="/img/omie-logo.png" alt="Sistema ERP - Omie" class="img-fluid m-sm-2">
+                        </a>
                       </div>
-                      <div class="item">
-                        <div class="card-indice">
-                          <img src="/img/grafismo3.png" alt="Remoção do efeito inflacionário" class="img-fluid lozad">
-                          <h3 class="text-white mt-0 mb-3 mb-lg-2">Remoção do efeito<br class="d-none d-lg-block"> inflacionário</h3>
-                          <p class="text-white mb-0">Corrigimos os dados das<br class="d-none d-xl-block"> movimentações<br class="d-none d-xl-block"> financeiras por segmento,<br class="d-none d-xl-block"> com um cálculo específico<br class="d-none d-xl-block"> para retirar a inflação e<br class="d-none d-xl-block"> comparar os dados sem<br class="d-none d-xl-block"> considerar a evolução de<br class="d-none d-xl-block"> preços, a fim de obter o<br class="d-none d-xl-block"> crescimento real de cada<br class="d-none d-xl-block"> setor.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-        
-                  <!-- IODE PMES -->
-                  <div class="box-iode b-pmes mt-3 mt-lg-0 mb-lg-3">
-                    <a data-bs-toggle="modal" data-bs-target="#modal-pme" class="ajuda lozad">
-                      <img data-src="/assets/images/iode/ajuda.svg" alt="Ajuda" class="img-fluid lozad">
-                    </a>
-                    <h2 class="text-white mb-5 mb-lg-4">IODE-PMES</h2>
-        
-                    <div class="pmes">
-                      <div class="card-pme"> </div>
-                    </div>
-                  </div>
-        
-                  <!-- COMPARATIVO ANUAL -->
-                  <div class="box-iode b-comparativo box-tabs mt-3 mt-lg-0">
-                    <a data-bs-toggle="modal" data-bs-target="#modal-anual" class="ajuda">
-                      <img data-src="/assets/images/iode/ajuda.svg" alt="Ajuda" class="img-fluid lozad">
-                    </a>
-                    <h2 class="text-white mb-5 mb-lg-4">COMPARATIVO ANUAL</h2>
-        
-                    <a href="/assets/images/iode/graficos-junho.png" data-fancybox="gallery">
-                      <img data-src="/assets/images/iode/graficos-junho.png" alt="Comparativo anual 2023" class="img-fluid lozad">
-                    </a>
-                  </div>
-        
-                  <!-- POR SEGMENTO -->
-                  <div class="box-iode b-segmento box-tabs mt-3 mt-lg-0 mb-lg-3 ms-lg-3">
-                    <a data-bs-toggle="modal" data-bs-target="#modal-segmento" class="ajuda">
-                      <img data-src="/assets/images/iode/ajuda.svg" alt="Ajuda" class="img-fluid lozad">
-                    </a>
-    
-                    <h2 class="text-white mb-5 mb-lg-4">POR SEGMENTO</h2>
-    
-                    <div class="cards-seg">
-                      <div class="nav-seg">
-                        <img data-src="/assets/images/iode/chevron-left.svg" alt="Anterior" class="img-fluid seg-ant lozad">
-                        <img data-src="/assets/images/iode/chevron-right.svg" alt="Próximo" class="img-fluid seg-prox lozad">
-                      </div>
-                    </div>
-                  </div>
-        
-                  <!-- ARQUIVO MENSAL -->
-                  <div class="box-iode b-mensal mt-3 mt-lg-0 ms-lg-3">
-                    <a data-bs-toggle="modal" data-bs-target="#modal-arquivo" class="ajuda">
-                      <img data-src="/assets/images/iode/ajuda.svg" alt="Ajuda" class="img-fluid lozad">
-                    </a>
-                    <h2 class="text-white mb-4">ARQUIVO MENSAL</h2>
-        
-                    <p class="text-white mb-0">Selecione o mês:</p>
-        
-                    <div class="form-select py-0">
-                      <select name="download" id="download">
-                        <option value="/indice-economico/pdf/Boletim Mensal IODE - Junho 23 - 72758.pdf">Junho 2023</option>
-                        <option value="/indice-economico/pdf/BoletimMaio23.pdf">Maio 2023</option>
-                        <option value="/indice-economico/pdf/Boletim-Marco23.pdf">Março 2023</option>
-                      </select>
-        
-                      <a href="/indice-economico/Boletim Mensal IODE - Junho 23 - 72758.pdf" download>
-                        <img data-src="/assets/images/iode/ico-download.png" alt="Download" class="img-fluid lozad">
-                      </a>
-                    </div>
-                  </div>
                 </div>
-      
-                <div class="col-sub-indices sub-2">
-                  <!-- DESTAQUE DO MÊS -->
-                  <div class="box-iode b-destaque mt-3 mt-lg-0 mb-lg-3">
-                    <h2 class="text-white mb-4">DESTAQUE DO MÊS</h2>
+            </div>
+      </nav>
         
-                    <p class="text-white fs-6">IODE-PMEs acelera em Maio/2023		</p>
-                  </div>
-        
-                  <!-- IMG DIFERENÇA INDICE TRIMESTRAL -->
-                  <div class="box-iode b-diferenca p-0 mt-3 mt-lg-0 bg-transparent mb-lg-3">
-                    
-                    <a href="https://www.youtube.com/watch?v=eOPJUWX_IbQ" target="_blank" rel="noopener noreferrer" class="h-video">
-                      <div class="overlay">
-                        <img data-src="/assets/images/iode/play.png" alt="Play" class="img-fluid lozad">
-                      </div>
-    
-                      <img data-src="/assets/images/iode/diferenca-desk.png" alt="Entenda a diferença entre o boletim mensal e a edição trimestral" class="img-fluid w-100 mb-3 mb-lg-0 d-none d-lg-block lozad">
-                      <img data-src="/assets/images/iode/img-diferenca.png" alt="Entenda a diferença entre o boletim mensal e a edição trimestral" class="img-fluid w-100 mb-3 mb-lg-0 d-lg-none lozad">
-                    </a>
-                    <img data-src="/assets/images/iode/banner-indicetrimestral.png" alt="ÍNDICE TRIMESTRAL" class="img-fluid w-100 mb-0 d-lg-none lozad">
-                  </div>
-        
-                  <!-- INDICE TRIMESTRAL -->
-                  <div class="box-iode b-trimestral d-none d-lg-flex flex-column justify-content-end">
-                    <h2 class="mb-3">ÍNDICE TRIMESTRAL</h2>
-                    <h3 class="mb-2 mb-xxl-3">Acesse o relatório com a análise completa dos últimos três meses realizada por nossos especialistas.</h3>
-      
-                    <a data-bs-toggle="modal" data-bs-target="#modal-form" class="" style="cursor: pointer;">
-                      <img data-src="/assets/images/iode/baixe-agora.png" alt="Ebook Trimestral IODE-PMEs" class="img-fluid img-cta lozad">
-                    </a>
-                  </div>
-                </div>
+      <header class="banner p-0 bg-petroleo mb-0" style="background-color: rgb(0, 30, 39);">
+          <div class="container">
+            <div class="row">        
+              <div class="col-12 d-lg-none">
+                <img src="/img/banner-mob.png" alt="Imagem representativa" class="img-fluid w-100">
               </div>
-    
-            </div>
-          </div>
-        </div>
-      </section>
-    
-      <section class="sec-ajuda bg-bebe pb-5 pt-0">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 mb-5 px-4">
-              <h2>Como utilizo o índice no meu planejamento?</h2>
-              <p class="subt"><strong>Saiba como utilizar o IODE-PMEs e tomar as melhores decisões para o seu negócio.</strong></p>
-            </div>
-    
-            <div class="col-12 px-4">
-              <div class="owl-plan owl-carousel owl-theme d-lg-none">
-                <div class="item">
-                  <div class="card-plano">
-                    <h3>Monitoramento das tendências econômicas</h3>
-                    <p class="mb-0">Acompanhe as tendências econômicas do mercado como um todo, obtenha os dados referentes ao seu segmento de atuação e se antecipe nas tomadas de decisão de sua empresa.</p>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="card-plano">
-                    <h3>Acompanhamento da evolução do setor</h3>
-                    <p class="mb-0">Tenha sempre em mãos a evolução do seu segmento de atuação: isso vai te auxiliar a compreender o momento pelo qual seu mercado específico está enfrentando e comparar com o desempenho do seu negócio.</p>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="card-plano">
-                    <h3>Avaliação de desempenho de atividades específicas</h3>
-                    <p class="mb-0">Acesse os dados principais de cada setor: é importante analisar a movimentação de segmentos concorrentes ao seu, sejam eles diretos ou indiretos. Isso vai ampliar a sua visão e ajudar você nas tomadas de decisões, além de poder remanejar forças para uma atividade específica em sua empresa.</p>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="card-plano">
-                    <h3>Compreender a sazonalidade do seu segmento</h3>
-                    <p class="mb-0">Entenda o comportamento do mercado em datas comerciais específicas, saiba como cada uma delas impacta seu negócio e tome decisões de acordo com a sazonalidade do seu negócio.</p>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="cards-plano d-none d-lg-flex">
-                <div class="card-plano">
-                  <h3>Monitoramento das tendências econômicas</h3>
-                  <p class="mb-0">Acompanhe as tendências econômicas do mercado como um todo, obtenha os dados referentes ao seu segmento de atuação e se antecipe nas tomadas de decisão de sua empresa.</p>
-                </div>
-                <div class="card-plano">
-                  <h3>Acompanhamento da evolução do setor</h3>
-                  <p class="mb-0">Tenha sempre em mãos a evolução do seu segmento de atuação: isso vai te auxiliar a compreender o momento pelo qual seu mercado específico está enfrentando e comparar com o desempenho do seu negócio.</p>
-                </div>
-                <div class="card-plano">
-                  <h3>Avaliação de desempenho de atividades específicas</h3>
-                  <p class="mb-0">Acesse os dados principais de cada setor: é importante analisar a movimentação de segmentos concorrentes ao seu, sejam eles diretos ou indiretos. Isso vai ampliar a sua visão e ajudar você nas tomadas de decisões, além de poder remanejar forças para uma atividade específica em sua empresa.</p>
-                </div>
-                <div class="card-plano">
-                  <h3>Compreender a sazonalidade do seu segmento</h3>
-                  <p class="mb-0">Entenda o comportamento do mercado em datas comerciais específicas, saiba como cada uma delas impacta seu negócio e tome decisões de acordo com a sazonalidade do seu negócio.</p>
-                </div>
-              </div>
-            </div>
-    
-            <div class="col-12 d-flex justify-content-center px-4 mt-5">
-              <a data-bs-toggle="modal" data-bs-target="#modal-form" class="my-4" style="cursor: pointer;">
-                <img data-src="/assets/images/iode/cta-baixe.svg" alt="Baixe" class="img-fluid img-cta lozad">
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    
-      <section class="sec-midia">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12 px-0">
-              <div class="div-midias">
-                <div class="midia m-principal pb-5">
-                  <div class="box-iode">
-                    <h2 class="text-white mb-4 mt-0">Omie na Mídia</h2>
-                    <p class="subt"><strong class="text-white">O índice da Omie tornou-se referência em análises econômicas das pequenas e médias empresas brasileiras.</strong></p>
-                    <p class="text-white mb-0">Confira as últimas notícias publicadas e fique por dentro das análises mês a mês e sua repercussão na grande mídia:</p>
-                  </div>
-                </div>
-                <div class="midia bg-bebe">
-                  <div class="box-iode">
-                    <img data-src="/assets/images/iode/logo-exame.png" alt="Logo Exame" class="img-fluid pb-5 pb-xxl-0 lozad">
-                    <a href="https://exame.com/negocios/pequenas-e-medias-empresas-brasileiras-crescem-19-em-2022/" target="_blank" rel="noopener noreferrer" class="d-flex justify-content-between align-items-end">
-                      Pequenas e médias empresas brasileiras crescem 1,9% em 2022.
-                      <img data-src="/assets/images/Arrow-right.png" alt="Saiba mais" class="img-fluid lozad">
+              <div class="col-12">
+                <div class="caixa-content-iode">
+                  <div class="content">
+                    <img src="/img/logo-iode.png" alt="Indice Omie de Desempenho Econômico das PMEs" class="img-fluid mt-lg-0">
+                    <h2 class="my-4 text-white pe-4">Índice Omie de Desempenho Econômico das PMEs</h2>
+                    <p><strong class="text-white">O empreendedorismo brasileiro sob uma nova perspectiva.</strong></p>
+                    <p class="text-white">A Omie desenvolveu o IODE-PMEs com o objetivo de ajudar os empreendedores a entender o comportamento do mercado de pequenas e médias empresas no Brasil e, assim, <strong class="text-white">tomar decisões baseadas em dados para os seus negócios.</strong></p>
+                    <a href="login.html">
+                      <img src="/img/cta-acesse.svg" alt="Acessar IODE" class="img-fluid">
                     </a>
                   </div>
-                </div>
-                <div class="midia bg-white">
-                  <div class="box-iode">
-    
-                    <img data-src="/assets/images/iode/logo-exame.png" alt="Logo Exame" class="img-fluid pb-5 pb-xxl-0 lozad">
-                    <a href="https://exame.com/negocios/o-que-esperar-das-pequenas-e-medias-empresas-brasileiras-em-2023/" target="_blank" rel="noopener noreferrer" class="d-flex justify-content-between align-items-end">
-                      O que esperar das pequenas e médias empresas brasileiras em 2023?
-                      <img data-src="/assets/images/Arrow-right.png" alt="Saiba mais" class="img-fluid lozad">
-                    </a>
-                  </div>
-                </div>
-                <div class="midia bg-bebe">
-                  <div class="box-iode">
-                    <img data-src="/assets/images/iode/logo-globo.png" alt="Logo O Globo" class="img-fluid pb-5 pb-xxl-0 lozad">
-                    <a href="https://oglobo.globo.com/blogs/pense-grande/post/2023/02/pequenos-negocios-faturam-19percent-mais-em-2022-e-enfrentam-desafios-para-ampliar-ganhos-este-ano-entenda.ghtml" target="_blank" rel="noopener noreferrer" class="d-flex justify-content-between align-items-end">
-                      Pequenos negócios faturam 1,9% mais em 2022, e enfrentam desafios para ampliar ganhos este ano.
-                      <img data-src="/assets/images/Arrow-right.png" alt="Saiba mais" class="img-fluid lozad">
-                    </a>
-                  </div>
-                </div>
-                <div class="midia bg-white">
-                  <div class="box-iode">
-                    <img data-src="/assets/images/iode/logo-valorinveste.png" alt="Logo Valor Investe" class="img-fluid pb-5 pb-xxl-0 lozad">
-                    <a href="https://valorinveste.globo.com/objetivo/empreenda-se/noticia/2023/02/07/veja-em-quais-setores-as-pequenas-empresas-fecharam-2022-com-mais-dinheiro-em-caixa.ghtml" target="_blank" rel="noopener noreferrer" class="d-flex justify-content-between align-items-end">
-                      Veja em quais setores as pequenas empresas fecharam 2022 com mais dinheiro em caixa.
-                      <img data-src="/assets/images/Arrow-right.png" alt="Saiba mais" class="img-fluid lozad">
-                    </a>
-    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    
-      <section class="sec-espec bg-white py-4 pb-lg-5">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12 px-4 text-center">
-              <h2 class="mb-4">Palavra do especialista</h2>
-              <p class="subt">Que tal conferir os pontos mais interessantes abordados em nosso índice pelo especialista? Assim, você já saberá o que encontrar quando abri-lo!  Trouxemos pequenos recortes para você começar. Aproveite! </p>
-            </div>
-    
-            <div class="col-12 col-lg-11 col-xxl-10 px-0 mt-4">
-              <div class="owl-espec owl-carousel owl-theme">
-                <div class="item">
-                  <a href="https://www.youtube.com/watch?v=3E3clr0ZL_I" target="_blank" rel="noopener noreferrer" class="h-video">
-                    <div class="overlay">
-                      <img data-src="/assets/images/iode/play.png" alt="Play" class="img-fluid lozad">
-                    </div>
-                    <img data-src="/assets/images/iode/video-5.jpg" alt="Palavra do especialista 1" class="img-fluid lozad">
-                  </a>
-                </div>
-                <div class="item">
-                  <a href="https://www.youtube.com/watch?v=b_n1phpo4eY&list=PLT_nh7d0FvPV20q-6yHBA5FAqtN_mIzkH&index=6" target="_blank" rel="noopener noreferrer" class="h-video">
-                    <div class="overlay">
-                      <img data-src="/assets/images/iode/play.png" alt="Play" class="img-fluid lozad">
-                    </div>
-                    <img data-src="/assets/images/iode/video-4.png" alt="Palavra do especialista 1" class="img-fluid lozad">
-                  </a>
-                </div>
-                <div class="item">
-                  <a href="https://www.youtube.com/watch?v=bufCF03qk5M&list=PLT_nh7d0FvPV20q-6yHBA5FAqtN_mIzkH&index=5" target="_blank" rel="noopener noreferrer" class="h-video">
-                    <div class="overlay">
-                      <img data-src="/assets/images/iode/play.png" alt="Play" class="img-fluid lozad">
-                    </div>
-                    <img data-src="/assets/images/iode/video-5.png" alt="Palavra do especialista 2" class="img-fluid lozad">
-                  </a>
-                </div>
-                <div class="item">
-                  <a href="https://www.youtube.com/watch?v=GQTKhC77iJw&list=PLT_nh7d0FvPV20q-6yHBA5FAqtN_mIzkH" target="_blank" rel="noopener noreferrer" class="h-video">
-                    <div class="overlay">
-                      <img data-src="/assets/images/iode/play.png" alt="Play" class="img-fluid lozad">
-                    </div>
-                    <img data-src="/assets/images/iode/espec-lancamento.png" alt="Palavra do especialista 3" class="img-fluid lozad">
-                  </a>
-                </div>
-                <div class="item">
-                  <a href="https://www.youtube.com/watch?v=RisZY8Gmv9E&list=PLT_nh7d0FvPV20q-6yHBA5FAqtN_mIzkH&index=3" target="_blank" rel="noopener noreferrer" class="h-video">
-                    <div class="overlay">
-                      <img data-src="/assets/images/iode/play.png" alt="Play" class="img-fluid lozad">
-                    </div>
-                    <img data-src="/assets/images/iode/espec-lancamento-2.png" alt="Palavra do especialista 4" class="img-fluid lozad">
-                  </a>
-                </div>
-                <div class="item">
-                  <a href="https://www.youtube.com/watch?v=BVMDHAY-f80&list=PLT_nh7d0FvPV20q-6yHBA5FAqtN_mIzkH&index=5" target="_blank" rel="noopener noreferrer" class="h-video">
-                    <div class="overlay">
-                      <img data-src="/assets/images/iode/play.png" alt="Play" class="img-fluid lozad">
-                    </div>
-                    <img data-src="/assets/images/iode/espec-lancamento-3.png" alt="Palavra do especialista 5" class="img-fluid lozad">
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    
-      <section class="sec-economia bg-bebe pb-5 pt-0">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6"></div>
-            <div class="col-12 col-lg-6">
-              <h2>Economia: Inteligência na tomada de decisão</h2>
-              <p class="mb-5 subt"><strong>Entenda o papel da macro e da microeconomia no Brasil e tome decisões assertivas para o seu negócio.</strong></p>
-              <p class="mb-4">Conheça o curso da Omie.Academy, comandado por Felipe Beraldi, economista e especialista em Dados Estratégicos Mercadológicos e idealizador do IODE-PMEs, que vai te ajudar com dicas de utilização dos dados do índice.</p>
-              <p class="mb-4">A Omie.Academy é uma comunidade de empreendedores que cria um espaço seguro para compartilharem suas dores, aprendizados, erros e, assim, construírem, juntos, o caminho para o sucesso.</p>
-              <p class="mb-0">Faça parte de um seleto grupo de empreendedores que está disposto a crescer e potencializar seus negócios, dividindo conhecimentos e ajudando outras empresas, além de discutir e aprender com outros gestores.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
 
-    <footer>
+                </div>
+              </div>
+            </div>
+          </div>
+      </header>
 
-    </footer>
+  <main class="main-iode mt-0">
+    <section class="sec-iode mt-3 pb-5" style="background: #00475D;">
+      <div class="container">
+        <div class="row">
+          <div class="owl-carousel">
+            <div class="col-md-4 py-3 mb-2">
+              <img src="/img/grafismo1.png" alt="Tópico 1 - Dados financeiros anônimos">
+                  <h3 class="text-white mt-0 mb-3 mb-lg-2">Movimentações
+                    <br class="d-none d-lg-block d-xxl-none">financeiras anônimas
+                  </h3>
+                  <p class="text-white mb-0">Corrigimos os dados das
+                    <br class="d-none d-xl-block"> movimentações
+                    <br class="d-none d-xl-block"> financeiras por segmento,
+                    <br class="d-none d-xl-block"> com um cálculo específico
+                    <br class="d-none d-xl-block"> para retirar a inflação e
+                    <br class="d-none d-xl-block"> comparar os dados sem
+                    <br class="d-none d-xl-block"> considerar a evolução de
+                    <br class="d-none d-xl-block"> preços, a fim de obter o
+                    <br class="d-none d-xl-block"> crescimento real de cada
+                    <br class="d-none d-xl-block"> setor.
+                  </p> 
+            </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="script.js" defer></script>
+            <div class="col-md-4 py-3 mb-2">
+              <img src="/img/grafismo2.png" alt="Tópico 1 - Dados financeiros anônimos">
+                <h3 class="text-white mt-0 mb-3 mb-lg-2">Setorização
+                  <br class="d-none d-lg-block d-xxl-none"> por CNAE
+                </h3> 
+                <p class="text-white mb-0">Analisamos as
+                  <br class="d-none d-xl-block"> atividades econômicas 
+                  <br class="d-none d-xl-block"> (setores de atuação)
+                  <br class="d-none d-xl-block"> de cada empresa e as
+                  <br class="d-none d-xl-block"> segmentamos por CNAE,
+                  <br class="d-none d-xl-block"> permitindo a avaliação dos
+                  <br class="d-none d-xl-block"> principais setores de
+                  <br class="d-none d-xl-block"> atuação das PMEs
+                  <br class="d-none d-xl-block"> brasileiras
+                </p> 
+            </div>
 
-</body>
+            <div class="col-md-4 py-3 mb-2">
+              <img src="/img/grafismo3.png" alt="Tópico 1 - Dados financeiros anônimos">
+                <h3 class="text-white mt-0 mb-3 mb-lg-2">Remoção do efeito
+                  <br class="d-none d-lg-block d-xxl-none"> inflacionário
+                  </h3> 
+                  <p class="text-white mb-0">Corrigimos os dados das
+                    <br class="d-none d-xl-block"> movimentações
+                    <br class="d-none d-xl-block"> financeiras por segmento,
+                    <br class="d-none d-xl-block"> com um cálculo específico
+                    <br class="d-none d-xl-block"> para retirar a inflação e
+                    <br class="d-none d-xl-block"> comparar os dados sem
+                    <br class="d-none d-xl-block"> considerar a evolução de
+                    <br class="d-none d-xl-block"> preços, a fim de obter o
+                    <br class="d-none d-xl-block"> crescimento real de cada
+                    <br class="d-none d-xl-block"> setor.
+                  </p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+      <footer>
+
+      </footer>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+      <!--carrosseis-->
+        <script>
+          $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+              items: 1, 
+              loop: true, 
+              nav: true, 
+              dots: false, 
+              responsiveClass: true, 
+              responsive: {
+                992: {
+                  items: 3 
+                }
+              }
+            });
+          });
+        </script>
+
+  </body>
 </html>
