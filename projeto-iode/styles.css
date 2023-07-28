@@ -64,10 +64,11 @@ p {
 .h2-card {
     width: 100%; 
     color: white; 
-    font-size: 14px; 
+    font-size: 18px; 
     letter-spacing: 2.80px; 
     word-wrap: break-word; 
-    text-align: center;
+    text-align: left;
+    padding: 16px;
 }¨
 
 .sec-iode {
@@ -75,6 +76,20 @@ p {
     z-index: 1;
 }
 
+.sec-iode .caixa-content-iode {
+    background: #00475d;
+    padding: 1.5rem 1.5rem;
+    z-index: 1;
+}
+
+@media (max-width: 767.98px) {
+    .img-md {
+      max-width: 100%; 
+      width: 100%; 
+      height: auto; 
+      padding-right: 30px;
+    }
+  }
 
 /* Custom Desk */
 @media (min-width: 992px) {
@@ -110,4 +125,15 @@ p {
         background-repeat: no-repeat;
         background-size: contain;
     }
+
+    .grid-indices .b-destaque {
+        grid-area: b-destaque;
+    }
+
+    .sec-iode .caixa-content-iode {    
+    background: #00475d;
+    padding: 1.5rem 1.5rem;
+    z-index: 1;
+    }
+
 }
